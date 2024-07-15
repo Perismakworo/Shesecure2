@@ -41,7 +41,7 @@ To run this application locally, follow these steps:
 
 4. **Run the server:**
     ```bash
-    npm start
+    npx expo start
     ```
 
 5. **Install client dependencies:**
