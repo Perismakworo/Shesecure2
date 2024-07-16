@@ -1,3 +1,7 @@
+
+
+---
+
 # She Secure Project
 
 ## Description
@@ -42,14 +46,13 @@ The She Secure Project is a mobile application designed to enhance personal safe
         ```
     3. Set up the environment variables by creating a `.env` file:
         ```env
-       PORT=5000
-      DB_HOST=localhost
-      DB_USER=root
-      DB_PASSWORD=Sheilabina68
-      DB_NAME=shesecuredb
-      JWT_SECRET=£7\;>gF,.caU!#3t22t}?Yh%:k~sm-,|
-      EMAIL_USER=peris.makworo@strathmore.edu
-      EMAIL_PASS='kwtw ipom gfky tjis'
+        DB_HOST=your_database_host
+        DB_USER=your_database_user
+        DB_PASSWORD=your_database_password
+        DB_NAME=your_database_name
+        EMAIL_USER=your_email_user
+        EMAIL_PASS=your_email_password
+        JWT_SECRET=your_jwt_secret
 
         ```
     4. Run the backend server:
@@ -60,7 +63,7 @@ The She Secure Project is a mobile application designed to enhance personal safe
 3. **Frontend Setup**
     1. Navigate to the frontend directory:
         ```bash
-        cd ../Shesecure
+        cd ../fronted
         ```
     2. Install frontend dependencies:
         ```bash
@@ -68,7 +71,7 @@ The She Secure Project is a mobile application designed to enhance personal safe
         ```
     3. Start the Expo server:
         ```bash
-       npx  expo start
+        npx expo start
         ```
 
 ## Usage Instructions
@@ -84,8 +87,8 @@ The She Secure Project is a mobile application designed to enhance personal safe
 2. **Frontend App**
     Ensure the Expo server is running:
     ```bash
-    cd Shesecure
-  npx  expo start
+    cd frontend
+    npx expo start
     ```
 
 3. Use the Expo Go app on your mobile device to scan the QR code and load the app.
@@ -105,7 +108,7 @@ The She Secure Project is a mobile application designed to enhance personal safe
 The project is organized into two main folders: `backend` and `frontend`.
 
 ### Backend
-- **server.js**: Main server file that sets up the Express server and defines API endpoints.
+- **index.js**: Main server file that sets up the Express server and defines API endpoints.
 - **config/**: Contains configuration files for the database and other settings.
 - **models/**: Contains database schema definitions.
 - **routes/**: Contains route definitions for user authentication, circle management, and location updates.
@@ -116,7 +119,9 @@ The project is organized into two main folders: `backend` and `frontend`.
 - **components/**: Contains reusable components such as MapView and ProfileIcon.
 - **navigation/**: Contains navigation setup using React Navigation.
 
- ## Folder Structure
+### Folder Structure
+
+```plaintext
 shesecure/
 │
 ├── .expo/
@@ -175,9 +180,11 @@ shesecure/
 ├── package-lock.json
 ├── package.json
 └── README.md
+```
 
-
-## Additional Sections
+## Key Files
+- App.js: Main entry point of the React Native app.
+- index.js: Main server file that sets up the Express server and defines API endpoint
 
 ### Project Status
 The project is currently in progress.
@@ -197,12 +204,9 @@ This project is licensed under the MIT License.
 
 ![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-For more details, refer to the [LICENSE](LICENSE) file.
-
 ## Contact Information
 For questions or feedback, please open an issue on GitHub or contact:
-- Email: your-email@example.com
+- Email: peris.makworo@strathmore.edu
 
 ---
 
-This README file aims to provide a clear and concise guide to setting up and using the She Secure Project. For further details, refer to the code comments and documentation within the project files.
